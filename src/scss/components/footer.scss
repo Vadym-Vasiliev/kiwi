@@ -1,0 +1,142 @@
+.footer {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+    background-color: $nav-menu-bg;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+    background-color: $nav-menu-bg;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__link {
+    position: relative;
+    font-family: $font-babes;
+    font-size: 1.12rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: 250ms linear;
+
+    color: $black-light;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      opacity: 0;
+      transition: 250ms linear;
+
+      background-color: $blue;
+    }
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+
+    &:hover::after,
+    &:focus::before {
+      opacity: 1;
+    }
+  }
+
+  &__logo {
+    width: 95px;
+  }
+}
+
+.footer-right {
+  margin-left: auto;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__link {
+    display: block;
+    transition: 250ms linear;
+    &:hover,
+    &:focus {
+      transform: rotate(-20deg);
+    }
+  }
+
+  &__svg {
+    fill: $blue;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.16;
+
+    &--left {
+      line-height: 1.5;
+    }
+  }
+
+  &__img {
+    width: 38px;
+  }
+}

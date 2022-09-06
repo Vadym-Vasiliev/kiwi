@@ -1,0 +1,67 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+
+  color: $gray-dark;
+  background-color: $white;
+}
+
+.container {
+  max-width: 1250px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.primary-btn {
+  font-family: $font-babes;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  color: $white;
+  background-color: $blue;
+}
+
+.primary-title {
+  font-family: $font-babes;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+  color: $black-light;
+}
+
+.secondary-title {
+  font-family: $font-babes;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+
+  color: $black-dark;
+}
+
+.before-title {
+  font-weight: 700;
+  font-size: 0.87rem;
+  line-height: 1.14;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  color: $blue;
+}
+
+.after-title {
+  font-family: $font-galada;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 1.62;
+  text-align: center;
+}

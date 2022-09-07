@@ -5,13 +5,19 @@ html
     main 
       //- MAIN
       section.main
-        .container
+        .main-content
+          .main-content__img
+            img(src="img/main-decor.png", alt="decor")
           .primary-title.main__title
             h1 Everything You Need
-          .primary-title
+          .main__text.after-title
             p to Start Living
-          .primary-title
+          .main__text.main__text--mr.after-title
             p Zero-Waste 
+          .main__img
+            img(src="img/main.png", alt="box")
+          button.primary-btn.main__btn(type="button") Start now
+            
       //- WORKS
       section.works
         .container

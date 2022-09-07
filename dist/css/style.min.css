@@ -303,7 +303,7 @@ body {
 }
 
 .primary-btn {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1;
@@ -316,7 +316,7 @@ body {
 }
 
 .primary-title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-size: 6rem;
   line-height: 1;
@@ -326,7 +326,7 @@ body {
 }
 
 .secondary-title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-size: 3rem;
   line-height: 1;
@@ -377,7 +377,7 @@ body {
 }
 .header-list__link {
   position: relative;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
@@ -411,6 +411,7 @@ body {
   left: 0;
   box-shadow: 10px 10px 30px rgba(1, 163, 164, 0.15);
   opacity: 0;
+  z-index: 1;
   background-color: #ffffff;
 }
 .header-list-menu__active {
@@ -435,14 +436,49 @@ body {
 }
 
 .main {
+  position: relative;
   padding-top: 70px;
   padding-bottom: 70px;
+  overflow: hidden;
   background: linear-gradient(129.34deg, #feca57 56.78%, #e3aa2d 101.94%);
 }
 .main__title {
+  position: relative;
+  font-size: 5rem;
   text-align: center;
   letter-spacing: 0.05em;
-  margin-bottom: 0;
+  margin-bottom: 23px;
+}
+.main__text {
+  position: absolute;
+  right: 440px;
+  top: 180px;
+  color: #ffffff;
+  max-width: 394px;
+  margin-left: auto;
+}
+.main__text--mr {
+  top: 270px;
+  right: 480px;
+  margin-right: -130px;
+}
+.main__btn {
+  padding: 22px 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transition: 250ms linear;
+}
+.main__btn:hover, .main__btn:focus {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
+  background-color: rgba(1, 164, 164, 0.8588235294);
+}
+
+.main-content__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .works {
@@ -484,7 +520,7 @@ body {
   max-width: 282px;
 }
 .works-list__title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
@@ -689,7 +725,7 @@ body {
   padding: 40px;
 }
 .blog-list__title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
@@ -870,7 +906,7 @@ body {
 }
 .reviews-bottom-right__name {
   position: relative;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
@@ -987,7 +1023,7 @@ body {
 }
 .footer-left__link {
   position: relative;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-size: 1.12rem;
   line-height: 1;
   letter-spacing: 0.05em;

@@ -1,0 +1,107 @@
+.causebox {
+  padding-top: 100px;
+  padding-bottom: 247px;
+  overflow: hidden;
+  z-index: 1;
+
+  background-color: $nav-menu-bg;
+}
+
+.causebox-top {
+  position: relative;
+  margin-bottom: 40px;
+
+  &__decor {
+    position: absolute;
+    &--right {
+      bottom: -420px;
+      right: -380px;
+      width: 990px;
+    }
+
+    &--left {
+      width: 229px;
+      bottom: -190px;
+      left: -125px;
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    margin-left: 70px;
+    margin-bottom: 20px;
+  }
+
+  &__title-secondary {
+    position: relative;
+    margin-left: 70px;
+    margin-bottom: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -70px;
+      top: 15px;
+      width: 100%;
+      height: 100%;
+
+      background-image: url(../../img/gradient-line.svg);
+      background-repeat: no-repeat;
+      background-size: 50px;
+    }
+  }
+
+  &__title {
+    &--color {
+      color: $blue;
+    }
+  }
+}
+
+.causebox-bottom {
+  &__form {
+    position: relative;
+    z-index: 1;
+  }
+  &__label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 595px;
+    border-radius: 0px 50px 50px 0px;
+    padding: 0 15px 0 0;
+
+    background-color: $white;
+  }
+
+  &__input {
+    font-weight: 400;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    border: none;
+    padding: 40px 120px 40px 30px;
+
+    color: $gray-light;
+  }
+
+  &__btn {
+    padding: 22px 105px;
+    transition: 250ms linear;
+    margin-left: auto;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
+        0px 0px 1px rgb(0 0 0 / 12%);
+      background-color: rgba(1, 164, 164, 0.8588235294);
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    max-width: 595px;
+
+    color: $gray-light;
+  }
+}

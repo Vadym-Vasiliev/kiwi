@@ -140,8 +140,28 @@ html
                   p Make a Difference
                 .blog-list__text
                   p Small steps can lead to bigger changes, and now you are the change. Let's build community of people who care
-                button.primary-btn.blog-list__btn(type="button") Read more
-                
+                button.primary-btn.blog-list__btn(type="button") Read more          
+      //- CAUSEBOX
+      section.causebox
+        .container
+          .causebox-top
+            .causebox-top__decor.causebox-top__decor--right
+              img(src="img/causebox-decor.png", alt="decor")
+            .causebox-top__decor.causebox-top__decor--left
+              img(src="img/causebox-left.png", alt="decor")
+            .causebox-top__text.before-title
+              p Stay in the know
+            .causebox-top__title-secondary.secondary-title
+              p Hear about the latest sneak peaks and spoilers
+            .causebox-top__title.primary-title
+              h3 get CAUSEBOX delivered directly <span class="causebox-top__title--color">to your inbox!</span>
+          .causebox-bottom
+            form.causebox-bottom__form
+              label.causebox-bottom__label(for="email")
+                input.causebox-bottom__input(type="email" id="email" name="email" placeholder="Your email adress")
+                button.primary-btn.causebox-bottom__btn(type="submit") Sign up
+              .causebox-bottom__text
+                p By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web terms of use and privacy and cookie policy
       //- REVIEWS
       section.reviews
         .container

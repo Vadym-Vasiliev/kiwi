@@ -3,6 +3,11 @@
   padding-top: 70px;
   padding-bottom: 20px;
 
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -30,11 +35,20 @@
   display: flex;
   flex-direction: column;
   gap: 70px;
+
+  @include mobile {
+    gap: 40px;
+  }
 }
 
 .footer-top {
   display: flex;
   align-items: center;
+
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .footer-left {
@@ -42,9 +56,12 @@
   align-items: center;
   gap: 130px;
 
-  &__item {
-    display: flex;
-    align-items: center;
+  @include tablet {
+    gap: 45px;
+  }
+
+  @include mobile {
+    flex-direction: column;
     gap: 30px;
   }
 
@@ -52,6 +69,37 @@
     display: flex;
     align-items: center;
     gap: 30px;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      order: 2;
+    }
+
+    &--ml {
+      margin-left: 200px;
+
+      @include desktop-1024 {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &--hidden {
+      display: none;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      &--hidden {
+        display: block;
+      }
+    }
   }
 
   &__link {
@@ -64,6 +112,10 @@
     transition: 250ms linear;
 
     color: $black-light;
+
+    @include mobile {
+      font-size: 1rem;
+    }
 
     &::after {
       content: "";
@@ -91,11 +143,19 @@
 
   &__logo {
     width: 95px;
+    @include mobile {
+      order: 1;
+      width: 134px;
+    }
   }
 }
 
 .footer-right {
   margin-left: auto;
+  @include tablet {
+    margin-left: 0;
+    margin-top: 30px;
+  }
   &__list {
     display: flex;
     align-items: center;
@@ -130,6 +190,10 @@
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 1.16;
+
+    @include mobile {
+      font-size: 0.68rem;
+    }
 
     &--left {
       line-height: 1.5;

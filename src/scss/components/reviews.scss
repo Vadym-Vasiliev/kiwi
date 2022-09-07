@@ -36,9 +36,12 @@
 
 .reviews-bottom {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &__img {
     width: 668px;
+    margin-left: -160px;
   }
 }
 
@@ -48,6 +51,7 @@
   &__top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 100px;
   }
 

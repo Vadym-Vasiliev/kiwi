@@ -51,6 +51,14 @@ body {
   text-transform: uppercase;
 
   color: $black-dark;
+
+  @include mobile {
+    font-family: $font-advent;
+    font-size: 1.5rem;
+    line-height: 1.21;
+    text-align: center;
+    text-transform: lowercase;
+  }
 }
 
 .before-title {
@@ -61,6 +69,13 @@ body {
   text-transform: uppercase;
 
   color: $blue;
+
+  @include mobile {
+    font-size: 0.75rem;
+    line-height: 1.16;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
 }
 
 .after-title {

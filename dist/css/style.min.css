@@ -333,6 +333,15 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+@media screen and (max-width: 665px) {
+  .secondary-title {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.21;
+    text-align: center;
+    text-transform: lowercase;
+  }
+}
 
 .before-title {
   font-weight: 700;
@@ -341,6 +350,14 @@ body {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #01a3a4;
+}
+@media screen and (max-width: 665px) {
+  .before-title {
+    font-size: 0.75rem;
+    line-height: 1.16;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
 }
 
 .after-title {
@@ -865,6 +882,12 @@ body {
   padding-bottom: 100px;
   overflow: hidden;
 }
+@media screen and (max-width: 665px) {
+  .reviews {
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+}
 .reviews__img {
   position: absolute;
   z-index: -1;
@@ -873,22 +896,47 @@ body {
   top: 65px;
   left: 0;
 }
+@media screen and (max-width: 665px) {
+  .reviews__img--top {
+    display: none;
+  }
+}
 .reviews__img--small {
   width: 34px;
   bottom: 16px;
   left: 204px;
+}
+@media screen and (max-width: 665px) {
+  .reviews__img--small {
+    display: none;
+  }
 }
 .reviews__img--big {
   width: 82px;
   bottom: -41px;
   left: 100px;
 }
+@media screen and (max-width: 665px) {
+  .reviews__img--big {
+    display: none;
+  }
+}
 
 .reviews-top {
   margin-bottom: 50px;
 }
+@media screen and (max-width: 665px) {
+  .reviews-top {
+    margin-bottom: 30px;
+  }
+}
 .reviews-top__text {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 665px) {
+  .reviews-top__text {
+    margin-bottom: 10px;
+  }
 }
 
 .reviews-bottom {
@@ -896,19 +944,59 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1280px) {
+  .reviews-bottom {
+    gap: 20px;
+  }
+}
 .reviews-bottom__img {
   width: 668px;
   margin-left: -160px;
+}
+@media screen and (max-width: 665px) {
+  .reviews-bottom__img {
+    display: none;
+  }
 }
 
 .reviews-bottom-right {
   max-width: 620px;
 }
 .reviews-bottom-right__top {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__top {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+}
+.reviews-bottom-right__right {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 100px;
+}
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__right {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3px;
+  }
+}
+.reviews-bottom-right__img {
+  width: 60px;
+}
+.reviews-bottom-right__img--hidden {
+  display: none;
+}
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__img {
+    display: block;
+  }
 }
 .reviews-bottom-right__name {
   position: relative;
@@ -919,6 +1007,16 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000;
+}
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__name {
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 700;
+    font-size: 1.12rem;
+    line-height: 1.22;
+    letter-spacing: 0.05em;
+    text-transform: none;
+  }
 }
 .reviews-bottom-right__name::before {
   content: "";
@@ -934,6 +1032,17 @@ body {
   display: flex;
   align-items: center;
 }
+.reviews-bottom-right__span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e5e5e5;
+}
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__span {
+    font-size: 0.87rem;
+  }
+}
 .reviews-bottom-right__span--ml {
   margin-left: 5px;
 }
@@ -941,18 +1050,38 @@ body {
   max-width: 565px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__content {
+    margin-bottom: 5px;
+  }
+}
 .reviews-bottom-right__text {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.8;
 }
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__text {
+    font-size: 0.87rem;
+  }
+}
 .reviews-bottom-right__text:not(:last-child) {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__text:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 .reviews-bottom-right__btns {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 665px) {
+  .reviews-bottom-right__btns {
+    justify-content: center;
+  }
 }
 .reviews-bottom-right__btn-box {
   width: 30px;

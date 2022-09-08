@@ -4,14 +4,36 @@
   opacity: 1;
 
   background-color: $nav-menu-bg;
+
+  @include mobile {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 }
 
 .posts-top {
   text-align: center;
   margin-bottom: 50px;
 
+  @include mobile {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    @include mobile {
+      text-align: center;
+      text-transform: none;
+    }
+  }
+
   &__text {
     margin-bottom: 20px;
+    @include mobile {
+      margin-bottom: 10px;
+      max-width: 288px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
@@ -20,11 +42,41 @@
   display: flex;
   align-items: center;
   gap: 9px;
+
+  @include desktop-1024 {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 9px;
+    @include desktop-1024 {
+      gap: 4px;
+    }
+
+    @include mobile {
+      gap: 8px;
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+
   &__img {
     width: 239px;
 
+    @include desktop-1024 {
+      width: 140px;
+    }
+
     &--width {
-      width: 477px;
+      min-width: 477px;
+
+      @include desktop-1024 {
+        min-width: 278px;
+      }
     }
 
     &--opacity {
@@ -36,12 +88,28 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+
+    @include desktop-1024 {
+      gap: 4px;
+    }
+
+    @include mobile {
+      gap: 8px;
+    }
   }
 
   &__decor {
     position: absolute;
     top: -30px;
     left: -70px;
+
+    @include desktop-1024 {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__circle {
@@ -49,5 +117,12 @@
     top: -25px;
     right: -25px;
     z-index: 1;
+
+    @include desktop-1024 {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 }

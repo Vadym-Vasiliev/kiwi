@@ -669,13 +669,38 @@ body {
   opacity: 1;
   background-color: #f0f8f6;
 }
+@media screen and (max-width: 665px) {
+  .posts {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
 
 .posts-top {
   text-align: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 665px) {
+  .posts-top {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .posts-top__title {
+    text-align: center;
+    text-transform: none;
+  }
+}
 .posts-top__text {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 665px) {
+  .posts-top__text {
+    margin-bottom: 10px;
+    max-width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .posts-bottom {
@@ -684,11 +709,45 @@ body {
   align-items: center;
   gap: 9px;
 }
+@media screen and (max-width: 1280px) {
+  .posts-bottom {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}
+.posts-bottom__wrap {
+  display: flex;
+  gap: 9px;
+}
+@media screen and (max-width: 1280px) {
+  .posts-bottom__wrap {
+    gap: 4px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .posts-bottom__wrap {
+    gap: 8px;
+  }
+  .posts-bottom__wrap--hidden {
+    display: none;
+  }
+}
 .posts-bottom__img {
   width: 239px;
 }
+@media screen and (max-width: 1280px) {
+  .posts-bottom__img {
+    width: 140px;
+  }
+}
 .posts-bottom__img--width {
-  width: 477px;
+  min-width: 477px;
+}
+@media screen and (max-width: 1280px) {
+  .posts-bottom__img--width {
+    min-width: 278px;
+  }
 }
 .posts-bottom__img--opacity {
   z-index: 1;
@@ -698,16 +757,46 @@ body {
   flex-direction: column;
   gap: 9px;
 }
+@media screen and (max-width: 1280px) {
+  .posts-bottom__block {
+    gap: 4px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .posts-bottom__block {
+    gap: 8px;
+  }
+}
 .posts-bottom__decor {
   position: absolute;
   top: -30px;
   left: -70px;
+}
+@media screen and (max-width: 1280px) {
+  .posts-bottom__decor {
+    display: none;
+  }
+}
+@media screen and (max-width: 665px) {
+  .posts-bottom__decor {
+    display: none;
+  }
 }
 .posts-bottom__circle {
   position: absolute;
   top: -25px;
   right: -25px;
   z-index: 1;
+}
+@media screen and (max-width: 1280px) {
+  .posts-bottom__circle {
+    display: none;
+  }
+}
+@media screen and (max-width: 665px) {
+  .posts-bottom__circle {
+    display: none;
+  }
 }
 
 .blog {

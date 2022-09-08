@@ -499,19 +499,23 @@ body {
 }
 
 .works {
-  position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+@media screen and (max-width: 665px) {
+  .works {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 }
 .works__title {
   margin-bottom: 20px;
   text-align: center;
 }
-.works__img {
-  position: absolute;
-  top: 200px;
-  left: 320px;
-  z-index: -1;
+@media screen and (max-width: 665px) {
+  .works__title {
+    margin-bottom: 29px;
+  }
 }
 .works__btn {
   padding: 22px 84px;
@@ -524,8 +528,15 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
   background-color: rgba(1, 164, 164, 0.8588235294);
 }
+@media screen and (max-width: 665px) {
+  .works__btn {
+    padding: 19px 98px;
+    font-size: 1.5rem;
+  }
+}
 
 .works-list {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -533,8 +544,43 @@ body {
   gap: 178px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1280px) {
+  .works-list {
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .works-list {
+    margin-bottom: 30px;
+    gap: 65px;
+  }
+}
+.works-list__img-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 665px) {
+  .works-list__img-decor {
+    display: none;
+  }
+}
 .works-list__item {
+  position: relative;
   max-width: 282px;
+}
+@media screen and (max-width: 665px) {
+  .works-list__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 288px;
+    height: 15px;
+    background-image: url(../../img/works-mobile-decor.png);
+    background-repeat: no-repeat;
+  }
 }
 .works-list__title {
   font-family: "Bebas Neue";
@@ -546,17 +592,37 @@ body {
   margin-bottom: 20px;
   color: #000000;
 }
+@media screen and (max-width: 665px) {
+  .works-list__title {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 1.12rem;
+    line-height: 1.22;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}
 .works-list__text {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
   text-align: center;
 }
+@media screen and (max-width: 665px) {
+  .works-list__text {
+    font-size: 0.87rem;
+  }
+}
 .works-list__img {
   width: 200px;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 665px) {
+  .works-list__img {
+    width: 211px;
+    margin-bottom: 30px;
+  }
 }
 
 .box {

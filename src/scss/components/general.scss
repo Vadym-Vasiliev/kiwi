@@ -9,6 +9,10 @@ body {
 
   color: $gray-dark;
   background-color: $white;
+
+  &.body-header-mobile-menu__visible {
+    overflow: hidden;
+  }
 }
 
 .container {

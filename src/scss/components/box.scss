@@ -30,7 +30,7 @@
 
   @include mobile {
     gap: 20px;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   &__right {

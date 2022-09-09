@@ -875,7 +875,7 @@ body.body-header-mobile-menu__visible {
 @media screen and (max-width: 665px) {
   .box-content {
     gap: 20px;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .box-content__left {

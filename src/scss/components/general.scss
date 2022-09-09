@@ -88,4 +88,12 @@ body {
   font-size: 4.5rem;
   line-height: 1.62;
   text-align: center;
+
+  @include desktop-1024 {
+    font-size: 4rem;
+  }
+
+  @include tablet-768 {
+    font-size: 3.5rem;
+  }
 }

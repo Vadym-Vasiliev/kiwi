@@ -10,6 +10,12 @@
   }
 }
 
+@mixin tablet-768 {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 @mixin desktop-1024 {
   @media screen and (max-width: 1280px) {
     @content;

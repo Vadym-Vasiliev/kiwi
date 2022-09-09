@@ -1,4 +1,5 @@
 @import "./fonts";
+@import "./slick";
 @import "./normalize/normalize";
 @import "./utils/mixin";
 @import "./utils/reset";
@@ -15,3 +16,5 @@
 @import "./components/causebox";
 @import "./components/reviews";
 @import "./components/footer";
+
+@import "./components/main-popup";

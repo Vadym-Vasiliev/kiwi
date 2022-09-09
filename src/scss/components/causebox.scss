@@ -141,6 +141,9 @@
 
     color: $gray-light;
 
+    &.error {
+    }
+
     @include mobile {
       max-width: 288px;
       margin-bottom: 20px;

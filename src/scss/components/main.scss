@@ -42,7 +42,6 @@
     text-align: center;
     letter-spacing: 0.05em;
     margin-bottom: 0;
-    height: 80px;
 
     @include tablet {
       font-size: 3.7rem;
@@ -50,13 +49,11 @@
 
     @include mobile {
       font-size: 1.6rem;
-      height: 40px;
     }
   }
 
   &__text {
     color: $white;
-    height: 80px;
 
     @include desktop-1024 {
     }
@@ -104,10 +101,6 @@
   }
 
   &__img {
-    @include tablet {
-      margin-top: 140px;
-    }
-
     @include mobile {
       display: none;
     }
@@ -133,6 +126,7 @@
   @include mobile {
     &--hidden {
       display: block;
+      margin-top: 50px;
     }
   }
 

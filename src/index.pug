@@ -4,246 +4,35 @@ html
     include html/header
     main 
       //- MAIN
-      section.main
-        .container
-          .main-content
-            .main-content__img
-              img(src="img/main-decor.png", alt="decor")
-            .primary-title.main__title
-              h1 Everything You Need
-            .main__wrap
-              .main__text.after-title
-                p to Start Living
-              .main__text.main__text--mr.after-title
-                p Zero-Waste 
-            .main__img
-              img(src="img/main.png", alt="box")
-            .main-mobile-box.main-mobile-box--hidden
-              .main-mobile-box__img
-                img(src="img/main-mobile-top.png", alt="decor")
-              .main-mobile-box__img.main-mobile-box__img--width
-                img(src="img/main-mobile-box.png", alt="eco box")
-              
-            button.primary-btn.main__btn(type="button") Start now         
+      include html/main
       //- WORKS
-      section.works
-        .container
-          .secondary-title.works__title
-            h2 How it Works
-          ul.works-list
-            .works-list__img-decor
-              img(src="img/works-top.png", alt="circles")
-            li.works-list__item
-              .works-list__img
-                img(src="img/works-1.png", alt="how it works")
-              .works-list__content
-                .works-list__title
-                  p Join The Movement
-                .works-list__text
-                  p Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey
-            li.works-list__item
-              .works-list__img
-                img(src="img/works-2.png", alt="how it works")
-              .works-list__content
-                .works-list__title
-                  p Get Your Box
-                .works-list__text
-                  p Every month receive your box with essential products, but plastic free and safe for the environment
-            li.works-list__item
-              .works-list__img
-                img(src="img/works-3.png", alt="how it works")
-              .works-list__content
-                .works-list__title
-                  p Make a Difference
-                .works-list__text
-                  p Small steps can lead to bigger changes, and now you are the change. Let's build community of people who care
-          button.primary-btn.works__btn(type="button") Get the Box
+      include html/works
       //- BOX
-      section.box
-        .container
-          .box-content
-            .box-content__decor.box-content__decor--left
-              img(src="img/box-left.png", alt="decor")
-            .box-content__decor.box-content__decor--right
-              img(src="img/box-right.png", alt="decor")
-            .box-content__left
-              .box-content__img
-                img(src="img/box-1.jpg", alt="box")
-              .box-content__img
-                img(src="img/box-2.jpg", alt="box")
-            .box-content__right
-              .box-content__title.secondary-title
-                h3 BOX OF A MONTH
-              .box-content__text
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-              button.primary-btn.box-content__btn(type="button") See What's Inside
+      include html/box
       //- MISSION
-      section.mission
-        .container
-          .mission-content
-            .mission-content__img
-              img(src="img/mission-decor.png", alt="decor")
-            .mission-content__span.before-title
-              p OUR MISSION
-            .mission-content__title.primary-title
-              h3 We are here to help you live greener and more sustainably
-            .mission-content__text.after-title
-              p Small steps matter 
-            .mission-content__img-mobile.mission-content__img-mobile--hidden
-              img(src="img/mission-legs-mobile.png", alt="legs")
+      include html/mission
       //- POSTS
-      section.posts
-        .container
-          .posts-top
-            .posts-top__text.before-title
-              p Join the conversation an help us create a new world!
-            .posts-top__title.secondary-title
-              h3 Recent Posts
-          .posts-bottom
-            .posts-bottom__decor
-              img(src="img/posts-decor.png", alt="decor")
-            .posts-bottom__circle
-              img(src="img/posts-circle.png", alt="circle") 
-            .posts-bottom__wrap
-              .posts-bottom__block
-                .posts-bottom__img
-                  img(src="img/posts-1.jpg", alt="posts")
-                .posts-bottom__img
-                  img(src="img/posts-2.jpg", alt="posts")
-              .posts-bottom__block
-                .posts-bottom__img
-                  img(src="img/posts-3.jpg", alt="posts")
-                .posts-bottom__img
-                  img(src="img/posts-4.jpg", alt="posts")
-            .posts-bottom__wrap.posts-bottom__wrap--hidden
-              .posts-bottom__img.posts-bottom__img--width
-                img(src="img/posts-5.jpg", alt="posts")
-              .posts-bottom__block.posts-bottom__block--hidden
-                .posts-bottom__img
-                  img(src="img/posts-6.jpg", alt="posts")
-                .posts-bottom__img
-                  img(src="img/posts-7.jpg", alt="posts")
+      include html/posts
       //- BLOG
-      section.blog
-        .blog__decor
-              img(src="img/blog-decor.png", alt="decor")
-        .container
-          .blog__title.secondary-title
-            h3 What's new in blog?
-          ul.blog-list
-            li.blog-list__item
-              .blog-list__img
-                img(src="img/blog-1.jpg", alt="eco box")
-              .blog-list__content
-                .blog-list__title
-                  p Why KIWI Eco Box?
-                .blog-list__text
-                  p Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey
-                button.primary-btn.blog-list__btn(type="button") Read more
-                  img(src="img/blog-mobile-plus.svg", alt="plus")
-            li.blog-list__item.blog-list__item--hidden
-              .blog-list__img
-                img(src="img/blog-2.jpg", alt="eco box")
-              .blog-list__content
-                .blog-list__title.blog-list__title--mt
-                  p What Is Inside The April Kiwi Eco Box? Portable Lunch Box
-                .blog-list__text
-                  p Every month receive your box with essential products, but plastic free and safe for the environment
-                button.primary-btn.blog-list__btn(type="button") Read more
-                  img(src="img/blog-mobile-plus.svg", alt="plus")
-            li.blog-list__item.blog-list__item--hidden
-              .blog-list__img
-                img(src="img/blog-3.jpg", alt="eco box")
-              .blog-list__content
-                .blog-list__title
-                  p Make a Difference
-                .blog-list__text
-                  p Small steps can lead to bigger changes, and now you are the change. Let's build community of people who care
-                button.primary-btn.blog-list__btn(type="button") Read more
-                  img(src="img/blog-mobile-plus.svg", alt="plus")
-          span.blog__btns.blog__btns--hidden
+      include html/blog
       //- CAUSEBOX
-      section.causebox
-        .container
-          .causebox-top
-            .causebox-top__decor.causebox-top__decor--right
-              img(src="img/causebox-decor.png", alt="decor")
-            .causebox-top__decor.causebox-top__decor--left
-              img(src="img/causebox-left.png", alt="decor")
-            .causebox-top__text.before-title
-              p Stay in the know
-            .causebox-top__title-secondary.secondary-title
-              p Hear about the latest sneak peaks and spoilers
-            .causebox-top__title.primary-title
-              h3 get CAUSEBOX delivered directly <span class="causebox-top__title--color">to your inbox!</span>
-          .causebox-bottom
-            form.causebox-bottom__form
-              label.causebox-bottom__label(for="email")
-                input.causebox-bottom__input(type="email" id="email" name="email" placeholder="Your email adress")
-                button.primary-btn.causebox-bottom__btn(type="submit") Sign up
-              .causebox-bottom__text
-                p By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web terms of use and privacy and cookie policy
+      include html/causebox
       //- REVIEWS
-      section.reviews
-        .container
-          .reviews__img.reviews__img--top
-            img(src="img/reviews-top.png", alt="background")
-          .reviews__img.reviews__img--small
-            img(src="img/reviews-small-circle.png", alt="circle")
-          .reviews__img.reviews__img--big
-            img(src="img/reviews-big-circle.png", alt="circle")
-          .reviews-top
-            .before-title.reviews-top__text
-              p What do our
-            .secondary-title.reviews-top__title
-              h3 clients say
-          .reviews-bottom
-            .reviews-bottom__img
-              img(src="img/reviews-main.png", alt="clients")
-            .reviews-bottom-right
-              .reviews-bottom-right__top
-                .reviews-bottom-right__img.reviews-bottom-right__img--hidden
-                  img(src="img/reviews-mobile-girl.png", alt="girl")
-                .reviews-bottom-right__right
-                  .reviews-bottom-right__name
-                    p Jessica T.
-                  .reviews-bottom-right__rating
-                    .reviews-bottom-right__span
-                      span 
-                        svg(width="16" height="16")
-                          use(href="img/icons/icons.svg#reviews-start")
-                    .reviews-bottom-right__span
-                      span 
-                        svg(width="16" height="16")
-                          use(href="img/icons/icons.svg#reviews-start")
-                    .reviews-bottom-right__span
-                      span 
-                        svg(width="16" height="16")
-                          use(href="img/icons/icons.svg#reviews-start")
-                    .reviews-bottom-right__span
-                      span 
-                        svg(width="16" height="16")
-                          use(href="img/icons/icons.svg#reviews-start")
-                    .reviews-bottom-right__span
-                      span 
-                        svg(width="16" height="16")
-                          use(href="img/icons/icons.svg#reviews-start")
-                    .reviews-bottom-right__span.reviews-bottom-right__span--ml
-                      span 5/5
-              .reviews-bottom-right__content
-                .reviews-bottom-right__text
-                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                .reviews-bottom-right__text
-                  p Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              .reviews-bottom-right__btns
-                .reviews-bottom-right__btn-box
-                  button.reviews-bottom-right__btn(type="button")
-                    svg.reviews-bottom-right__svg(width="11" height="11")
-                      use(href="img/icons/icons.svg#reviews-arrow-left")
-                .reviews-bottom-right__btn-box
-                   button.reviews-bottom-right__btn(type="button")
-                    svg.reviews-bottom-right__svg(width="11" height="11")
-                      use(href="img/icons/icons.svg#reviews-arrow-right")
+      include html/reviews
     include html/footer
+    //- MAIN-POPUP
+    .popup
+      .popup__body
+        .popup__content
+          .popup__left
+            .popup__img
+              img(src="img/popup.png", alt="decor")
+          .popup-right
+            .popup-right__top
+              .popup-right__title.secondary-title
+                p Thank you for <span>subscribing!</span>
+              .popup-right__text 
+                p Now you will receive alerts when new news and boxes are released!
+            button.popup-right__btn.primary-btn(type="button") good
     script(src="js/app.min.js")
 

@@ -88,11 +88,17 @@
   &__item {
     max-width: 387px;
     border: 1px solid #f0f8f6;
+    margin-right: 30px;
 
     background-color: $white;
 
+    @include desktop-1024 {
+      max-width: 300px;
+    }
+
     @include mobile {
       max-width: 288px;
+      margin-right: 10px;
 
       &--hidden {
         display: none;
@@ -102,6 +108,10 @@
 
   &__img {
     width: 387px;
+
+    @include desktop-1024 {
+      width: 300px;
+    }
 
     @include mobile {
       width: 287px;

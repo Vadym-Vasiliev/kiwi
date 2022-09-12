@@ -1407,11 +1407,18 @@ body.body-header-mobile-menu__visible {
 .blog-list__item {
   max-width: 387px;
   border: 1px solid #f0f8f6;
+  margin-right: 30px;
   background-color: #ffffff;
+}
+@media screen and (max-width: 1280px) {
+  .blog-list__item {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 665px) {
   .blog-list__item {
     max-width: 288px;
+    margin-right: 10px;
   }
   .blog-list__item--hidden {
     display: none;
@@ -1419,6 +1426,11 @@ body.body-header-mobile-menu__visible {
 }
 .blog-list__img {
   width: 387px;
+}
+@media screen and (max-width: 1280px) {
+  .blog-list__img {
+    width: 300px;
+  }
 }
 @media screen and (max-width: 665px) {
   .blog-list__img {

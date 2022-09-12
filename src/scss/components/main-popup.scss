@@ -1,17 +1,15 @@
 .popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: 250ms linear;
+  max-width: 804px;
+  display: flex;
+  align-items: center;
+  gap: 62px;
+  border-radius: 20px;
+  z-index: 23;
+  display: none;
 
-  background-color: rgba(0, 0, 0, 0.5);
-
+  background-color: $white;
   &__visible {
-    opacity: 1;
+    display: block;
   }
 
   &__body {
@@ -19,17 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  &__content {
-    max-width: 804px;
-    display: flex;
-    align-items: center;
-    gap: 62px;
-    border-radius: 20px;
-    z-index: 23;
-
-    background-color: $white;
   }
 
   &__left {
@@ -41,6 +28,10 @@
     border-radius: 20px 0 0 20px;
 
     background-color: $nav-menu-bg;
+
+    @include mobile {
+      border-radius: 0 0 20px 20px;
+    }
   }
 
   &__img {
@@ -49,7 +40,11 @@
 }
 
 .popup-right {
-  padding: 50px 60px 50px 0;
+  padding: 50px 60px 50px 60px;
+
+  @include mobile {
+    padding: 50px 0;
+  }
   &__top {
     margin-bottom: 50px;
     max-width: 430px;
@@ -100,5 +95,15 @@
     &:hover,
     &:focus {
     }
+  }
+}
+
+.popup.fancybox__content {
+  flex-direction: row;
+  padding: 0;
+  gap: 0;
+
+  @include mobile {
+    flex-direction: column;
   }
 }

@@ -1516,6 +1516,12 @@ body.body-header-mobile-menu__visible {
   }
 }
 
+.blog .slick-arrow {
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+}
+
 .causebox {
   padding-top: 100px;
   padding-bottom: 247px;
@@ -1650,7 +1656,6 @@ body.body-header-mobile-menu__visible {
   line-height: 1.5;
   border: none;
   padding: 40px 120px 40px 30px;
-  color: #c4c4c4;
 }
 .causebox-bottom__input + .error {
   position: absolute;
@@ -1706,6 +1711,10 @@ body.body-header-mobile-menu__visible {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.carousel__button {
+  display: none;
 }
 
 .reviews {
@@ -2260,33 +2269,23 @@ body.body-header-mobile-menu__visible {
 }
 
 .popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: 250ms linear;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.popup__visible {
-  opacity: 1;
-}
-.popup__body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.popup__content {
   max-width: 804px;
   display: flex;
   align-items: center;
   gap: 62px;
   border-radius: 20px;
   z-index: 23;
+  display: none;
   background-color: #ffffff;
+}
+.popup__visible {
+  display: block;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .popup__left {
   display: flex;
@@ -2297,12 +2296,22 @@ body.body-header-mobile-menu__visible {
   border-radius: 20px 0 0 20px;
   background-color: #f0f8f6;
 }
+@media screen and (max-width: 665px) {
+  .popup__left {
+    border-radius: 0 0 20px 20px;
+  }
+}
 .popup__img {
   width: 214px;
 }
 
 .popup-right {
-  padding: 50px 60px 50px 0;
+  padding: 50px 60px 50px 60px;
+}
+@media screen and (max-width: 665px) {
+  .popup-right {
+    padding: 50px 0;
+  }
 }
 .popup-right__top {
   margin-bottom: 50px;
@@ -2344,4 +2353,14 @@ body.body-header-mobile-menu__visible {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.popup.fancybox__content {
+  flex-direction: row;
+  padding: 0;
+  gap: 0;
+}
+@media screen and (max-width: 665px) {
+  .popup.fancybox__content {
+    flex-direction: column;
+  }
 }

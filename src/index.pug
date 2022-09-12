@@ -21,18 +21,16 @@ html
       include html/reviews
     include html/footer
     //- MAIN-POPUP
-    .popup
-      .popup__body
-        .popup__content
-          .popup__left
-            .popup__img
-              img(src="img/popup.png", alt="decor")
-          .popup-right
-            .popup-right__top
-              .popup-right__title.secondary-title
-                p Thank you for <span>subscribing!</span>
-              .popup-right__text 
-                p Now you will receive alerts when new news and boxes are released!
-            button.popup-right__btn.primary-btn(type="button") good
+    .popup(id="dialog-content")
+      .popup__left
+        .popup__img
+          img(src="img/popup.png", alt="decor")
+      .popup-right
+        .popup-right__top
+          .popup-right__title.secondary-title
+            p Thank you for <span>subscribing!</span>
+          .popup-right__text 
+            p Now you will receive alerts when new news and boxes are released!
+        button.popup-right__btn.primary-btn(type="button") good
     script(src="js/app.min.js")
 

@@ -139,8 +139,6 @@
     border: none;
     padding: 40px 120px 40px 30px;
 
-    color: $gray-light;
-
     & + .error {
       position: absolute;
       left: 0;
@@ -200,5 +198,6 @@
   }
 }
 
-.causebox .error {
+.carousel__button {
+  display: none;
 }

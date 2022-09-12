@@ -1748,6 +1748,7 @@ body.body-header-mobile-menu__visible {
 .reviews__img--top {
   top: 65px;
   left: 0;
+  width: 100%;
 }
 @media screen and (max-width: 665px) {
   .reviews__img--top {

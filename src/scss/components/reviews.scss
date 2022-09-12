@@ -16,6 +16,7 @@
     &--top {
       top: 65px;
       left: 0;
+      width: 100%;
 
       @include mobile {
         display: none;

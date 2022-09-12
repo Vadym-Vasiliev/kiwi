@@ -81,10 +81,6 @@
   flex-wrap: wrap;
   gap: 29px;
 
-  @include mobile {
-    margin-bottom: 25px;
-  }
-
   &__item {
     max-width: 387px;
     border: 1px solid #f0f8f6;

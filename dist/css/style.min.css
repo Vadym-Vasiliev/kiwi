@@ -1399,11 +1399,6 @@ body.body-header-mobile-menu__visible {
   flex-wrap: wrap;
   gap: 29px;
 }
-@media screen and (max-width: 665px) {
-  .blog-list {
-    margin-bottom: 25px;
-  }
-}
 .blog-list__item {
   max-width: 387px;
   border: 1px solid #f0f8f6;

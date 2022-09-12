@@ -1626,13 +1626,6 @@ body.body-header-mobile-menu__visible {
 .causebox-bottom__form {
   position: relative;
   z-index: 1;
-}
-@media screen and (max-width: 665px) {
-  .causebox-bottom__form {
-    text-align: center;
-  }
-}
-.causebox-bottom__label {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -1642,8 +1635,13 @@ body.body-header-mobile-menu__visible {
   background-color: #ffffff;
 }
 @media screen and (max-width: 665px) {
-  .causebox-bottom__label {
-    display: contents;
+  .causebox-bottom__form {
+    display: flow-root;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0;
   }
 }
 .causebox-bottom__input {
@@ -1653,6 +1651,19 @@ body.body-header-mobile-menu__visible {
   border: none;
   padding: 40px 120px 40px 30px;
   color: #c4c4c4;
+}
+.causebox-bottom__input + .error {
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+@media screen and (max-width: 665px) {
+  .causebox-bottom__input + .error {
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+  }
 }
 @media screen and (max-width: 665px) {
   .causebox-bottom__input {

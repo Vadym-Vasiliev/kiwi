@@ -393,8 +393,8 @@ body.body-header-mobile-menu__visible {
 
 .container {
   max-width: 1250px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -521,6 +521,7 @@ body.body-header-mobile-menu__visible {
 }
 .header-list__logo {
   width: 191px;
+  display: block;
 }
 @media screen and (max-width: 665px) {
   .header-list__logo {
